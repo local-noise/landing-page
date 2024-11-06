@@ -2,15 +2,101 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <title>Whisper Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .violet {
+      color: violet;
+    }
+    div.grid-container {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+    }
+    header {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 3rem;
+      background-color: purple;
+      margin: 0;
+      color: white;
+    }
+    nav {
+      padding: 1rem 0 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .straight-flex {
+      display: flex;
+      align-items: center;
+    }
+    nav h1 {
+      display: inline;
+      font-size: 1rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    nav img {
+      height: 1.5rem;
+    }
+    .header-content {
+      width: 50%;
+      display: inline-block;
+    }
+    .header-big-img {
+      width: 35%;
+    }
+
+    main {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 3rem;
+      margin: 0;
+      background-color: white;
+      min-height: 50rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Whisper Gallery</h1>
-  <p>You see concrete, you see shrubs, you see cars and coffee shops and people walking fast. You know there's more. The stately walruses carved on that building, the fearless rat staring you down from that alley, the glass panels in the sidewalks are all glimpses into stories, hidden knowledge. It isn't all visible, but it can be audible. Whisper Gallery lets you experience the world around you more deeply by revealing the unseen.</p>
+  <div class="grid-container">
+    <header class="grid-child">
+      <nav>
+        <div class="straight-flex">
+          <img src="./assets/icon-bat.png" alt="logo">
+          <h1><a href="#">Whisper Gallery</a></h1>
+        </div>
+        <div>
+          <a href="data.html">Data Deletion</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </nav>
 
-  <p>Walk through your city with a witch, hear her stories of the magic that inhabits the shadowy places. Visit a new city with a historian, hear about the real people and struggles behind the architecture around you. Explore the street art and murals of a city with an artist, hear about the meaning of these pieces and be guided to find more than you ever could have on your own.</p>
+      <div class="header-content">
+        <h2>Explore the world and experience magical encounters <span class="violet">through sound</span></h2>
+        <p>Learn about culture and hidden gems around you</p>
+        <a href="#">google play logo here</a>
+      </div>
 
-  <p>Welcome others into your perception of a city by sharing your music tied to the locations that inspired it. Weave a new reality by sharing your imaginings of what could be behind the facades and locked doors. Let people know the deeper history of an area by sharing the real history and traditional folklore of your culture.</p>
+      <img class="header-big-img" src="/assets/two-devices.png" alt="two phones displaying Whisper Gallery app">
+    </header>
 
-  <p>Whisper Gallery is a platform for sharing knowledge, art, and culture in audio format, enabling us to have richer experiences of the world around us.</p>
+    <main class="grid-child">
+      <p>TODO: images here</p>
+
+    </main>
+  </div>
 </body>
 </html>
