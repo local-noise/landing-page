@@ -16,9 +16,17 @@
     .violet {
       color: #AC9BF9;
     }
+    a{
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
     div.grid-container {
       width: 100%;
       font-family: "Open Sans", sans-serif;
+      background-color: white;
+      min-height: 100vh;
     }
     header {
       padding-left: 3rem;
@@ -31,12 +39,14 @@
     nav {
       padding: 1rem 0 3rem 0;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
+      flex-wrap: wrap;
     }
-    nav .straight-flex {
+    nav .home-link {
       display: flex;
       align-items: center;
+      width: 100%;
     }
     nav h1 {
       display: inline;
@@ -44,11 +54,7 @@
     }
     nav a {
       margin-left: 1rem;
-      text-decoration: none;
       color: white;
-    }
-    nav a:hover {
-      text-decoration: underline;
     }
     nav img {
       height: 1.5rem;
@@ -73,30 +79,32 @@
     @media (min-width: 1000px){
       .header-content { width: 925px; }
     }
-    @media (max-width: 1200px){
 
-    }
     main {
       padding-left: 3rem;
       padding-right: 3rem;
       padding-top: 3rem;
+      padding-bottom: 3rem;
       margin: 0;
-      background-color: white;
-      min-height: 50rem;
+      min-height: 60vh;
+    }
+
+    footer {
+      background-color: #F2EFFF;
+      height: 3rem;
+      margin-top: -3rem;
+      text-align: center;
+      padding-top: 1rem;
     }
   </style>
 </head>
 <body>
   <div class="grid-container">
-    <header class="grid-child">
+    <header>
       <nav>
-        <div class="straight-flex">
+        <div class="home-link">
           <img src="./assets/icon-wht.png" alt="logo">
           <h1><a href="#">Whisper Gallery</a></h1>
-        </div>
-        <div>
-          <a href="data.html">Data Deletion</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
         </div>
       </nav>
 
@@ -111,10 +119,15 @@
       </div>
     </header>
 
-    <main class="grid-child">
-      <p>TODO: images here</p>
+    <main>
 
     </main>
+
+    <footer>
+      <a href="data.html">Data Deletion</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </footer>
   </div>
+
 </body>
 </html>
