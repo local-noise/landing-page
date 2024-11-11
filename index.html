@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Whisper Gallery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
       box-sizing: border-box;
     }
     .violet {
-      color: violet;
+      color: #AC9BF9;
     }
     div.grid-container {
       width: 100%;
@@ -23,7 +24,7 @@
       padding-left: 3rem;
       padding-right: 3rem;
       padding-bottom: 3rem;
-      background-color: purple;
+      background-color: #3C2E7A;
       margin: 0;
       color: white;
     }
@@ -53,13 +54,28 @@
       height: 1.5rem;
     }
     .header-content {
-      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align items: center;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      width: 80%;
+      max-width: 20rem;
+      min-width: 10rem;
       display: inline-block;
     }
     .header-big-img {
-      width: 35%;
+      width: 80%;
+      max-width: 19rem;
+      min-width: 10rem;
     }
+    @media (min-width: 1000px){
+      .header-content { width: 925px; }
+    }
+    @media (max-width: 1200px){
 
+    }
     main {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -75,7 +91,7 @@
     <header class="grid-child">
       <nav>
         <div class="straight-flex">
-          <img src="./assets/icon-bat.png" alt="logo">
+          <img src="./assets/icon-wht.png" alt="logo">
           <h1><a href="#">Whisper Gallery</a></h1>
         </div>
         <div>
@@ -85,12 +101,14 @@
       </nav>
 
       <div class="header-content">
-        <h2>Explore the world and experience magical encounters <span class="violet">through sound</span></h2>
-        <p>Learn about culture and hidden gems around you</p>
-        <a href="#">google play logo here</a>
-      </div>
+        <div class="header-text">
+          <h2>Explore the world and experience magical encounters <span class="violet">through sound</span></h2>
+          <p>Learn about culture and hidden gems around you</p>
+          <!-- <a href="#">google play logo here</a> -->
+        </div>
 
-      <img class="header-big-img" src="/assets/two-devices.png" alt="two phones displaying Whisper Gallery app">
+        <img class="header-big-img" src="./assets/two-devices.png" alt="two phones displaying Whisper Gallery app">
+      </div>
     </header>
 
     <main class="grid-child">
