@@ -22,7 +22,7 @@
     a:hover {
       text-decoration: underline;
     }
-    div.grid-container {
+    div.wrapper {
       width: 100%;
       font-family: "Open Sans", sans-serif;
       background-color: white;
@@ -88,6 +88,34 @@
       margin: 0;
       min-height: 60vh;
     }
+    main.grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      grid-template-areas:
+      ". . ."
+      "w1 . ."
+      "i1 . ."
+      "i1 . ."
+      "i1 i4 w2"
+      ". i4 i2"
+      ". i4 i2"
+      "w3 i5 i2"
+      "i3 i5 ."
+      "i3 . ."
+      "i3 . ."
+      ". . .";
+    }
+
+    .w1 { grid-area: w1; max-width: 25vw; }
+    .i1 { grid-area: i1; max-width: 25vw; }
+    .w2 { grid-area: w2; max-width: 25vw; }
+    .i2 { grid-area: i2; max-width: 25vw; }
+    .i4 { grid-area: i4; max-width: 25vw; }
+    .i5 { grid-area: i5; max-width: 25vw; }
+    .w3 { grid-area: w3; max-width: 25vw; }
+    .i3 { grid-area: i3; max-width: 25vw; }
+    div[class^='w'] { text-align: center; }
 
     footer {
       background-color: #F2EFFF;
@@ -96,10 +124,13 @@
       text-align: center;
       padding-top: 1rem;
     }
+    footer a {
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <div class="grid-container">
+  <div class="wrapper">
     <header>
       <nav>
         <div class="home-link">
@@ -119,13 +150,39 @@
       </div>
     </header>
 
-    <main>
+    <main class="grid-container">
+      <div class="w1">
+        <h4>Discover the world around you</h4>
+        <p>Learn about culture and hidden gems around you</p>
+      </div>
 
+      <img src="./assets/map-detail.png" class="i1" alt="screenshot of map detail">
+
+      <img src="./assets/dotted-line-top.png" class="i4" alt="screenshot of map detail">
+
+      <img src="./assets/dotted-line-bottom.png" class="i5" alt="screenshot of map detail">
+
+      <div class="w2">
+        <h4>Stash away your favorite audio</h4>
+        <p>Save your sounds and remember magical experiences</p>
+      </div>
+
+      <img src="./assets/map-detail.png" class="i2" alt="screenshot of map detail">
+
+      <div class="w3">
+        <h4>Become a Whisperer with us</h4>
+        <p>Create beautiful audio that educates the world</p>
+      </div>
+
+      <img src="./assets/map-detail.png" class="i3" alt="screenshot of map detail">
     </main>
 
     <footer>
+      -
       <a href="data.html">Data Deletion</a>
+      -
       <a href="privacy-policy.html">Privacy Policy</a>
+      -
     </footer>
   </div>
 
