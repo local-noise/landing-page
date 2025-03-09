@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Whisper Gallery Data Deletion</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icon-bat.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: white;
+    }
+    main {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      margin: 0;
+    }
+    .text-wrapper {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 0;
+    }
+    nav {
+      background-color: #3C2E7A;
+      margin: 0;
+      color: white;
+      padding: 1rem 3rem 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .straight-flex {
+      display: flex;
+      align-items: center;
+    }
+    nav h1 {
+      display: inline;
+      font-size: 1rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    nav img {
+      height: 1.5rem;
+    }
+
+    #rules {
+      width: 90vw;
+      height: 70vh;
+      background-color:white;
+      border: 1px solid #3C2E7A;
+      border-radius: 25px;
+      padding: 1rem;
+      overflow: scroll;
+    }
+
+    #rules.invisible { height: 0; }
+    .invisible {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+    <script type="text/javascript">
+    function approveRules(){
+      console.log("yes")
+      document.getElementById("rules").classList.add("invisible");
+      document.getElementById("application").classList.remove("invisible");
+    }
+  </script>
+  <main>
+    <nav>
+      <div class="straight-flex">
+        <img src="./assets/icon-bat-wht.png" alt="logo">
+        <h1><a href="index.html">Whisper Gallery</a></h1>
+      </div>
+    </nav>
+    <div class="text-wrapper">
+      <h1>Apply to be a Whisperer</h1>
+
+      <div id="rules">
+        <p>We'd love for you to share your original audio content on Whisper Gallery! First, please review our content guidelines.</p>
+
+        <h2>Content Rules</h2>
+        <ul>
+          <li>If you are unsure if a recording does or will break these rules, contact us and ask! We’re happy to clarify the rules and support you in making content that our listeners will love.</li>
+          <li>Do not share personal information about others, including legal names, addresses, or other contact methods.</li>
+          <li>All scripts must be your own writing or works that are copyright free.</li>
+          <li>If the recording in its entirety is an audio file that’s in the public domain, cite it in the audio description with its full title and source. For example ‘ “Don't take me home” by Von Tilzer, Harry -- Composer, Morton, Ed -- Vocalist -- Baritone Vocal, Bryan, Vincent -- Lyricist, source Library of Congress, Recording Catalog Number 5545’. If the recording is original audio using a script or materials that are copyright free, citation is optional or based on the license of the material.</li>
+          <li>All music & SFX must be made by the creator, and/or be copyright-free.</li>
+          <li>For all  voices present in the recording, the creator is solely responsible for ensuring they have the rights to use those voices.</li>
+          <li>No recordings of real criminal activities.</li>
+          <li>No audio including real or reenactments of violence.</li>
+          <li>Content descriptions can not include URLs. Creator bios can include URLs and we encourage you to link to your kofi, Patreon, or other ways listeners can make financial contributions.</li>
+          <li>Audio content may not mention monetization, "how to support me", "how to get this content early", "commissions", or "custom content". These details belong in the creator’s bio.</li>
+          <li>Audio content may not include promotion or advertising. Content like "sponsored by..." can go in the description of a sound.</li>
+          <li>No impersonation of celebrities or public figures. For example, “This is the studio where Nirvana recorded their first demo” is fine; “Hi I’m Kurt Cobain and I’m going to tell you about this studio where we recorded our first demo” is not permitted.</li>
+          <li>AI-generated content of any kind is banned. This goes for audio and scripts, including brief audio cameos, and applies to simple text-to-speech programs and using AI to copy or modify your own voice.</li>
+          <li>No content that includes hate speech or vilification of members of US “protected classes.” These are defined on the basis of sex (including sexual orientation and gender identity), race/color, age, disability, national origin, religion/creed, marital status, or genetic information. (<a href="https://en.wikipedia.org/wiki/Protected_group" target="_blank">details on Wikipedia</a>)</li>
+          <li>It is permissible to upload sexually explicit content. However, sexually explicit content must be tagged as “nsfw.” We define sexually explicit as a description of erotic activity that directly mentions genitals.</li>
+          <li>No recordings of real sexual acts or activities.</li>
+          <li>If content is found that breaks these rules, it will immediately be removed from the platform. If this was monetized content, all users who bought it will be refunded and no longer able to access it.</li>
+          <li>Repeat offenders will be banned from using the platform. </li>
+          <li>Whisper Gallery management reserves the right to remove any content it determines to be breaking these rules or is not conducive to building the inclusive creative community we want.</li>
+
+        </ul>
+
+            <h3>“Copyright free” is defined as being one of:</h3>
+        <ul>
+        <li>public domain https://www.loc.gov/legal/understanding-copyright/#use</li>
+        <li>licensed as CC 1 https://creativecommons.org/publicdomain/zero/1.0/</li>
+        <li>licensed as CC 3 https://creativecommons.org/licenses/by/3.0/ and your content complies with the rules of the license</li>
+        <li>licensed as CC 4 https://creativecommons.org/licenses/by/4.0/ and your content complies with the rules of the license</li>
+        </ul>
+
+        <button onclick="approveRules()">I agree to abide by these rules</button>
+      </div>
+
+      <div id="application" class="invisible">
+        <p>After submitting this form, you should hear from a member of our team within a few days to verify your identity and review your application. Yes, you'll talk to a real person! We find the best moderation is proactive - bots and trolls won't take two minutes to talk to us, but real people excited about creating cool audio content don't mind.</p>
+        <!-- TODO new form  -->
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
